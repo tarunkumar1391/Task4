@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>HRZ - TU Darmstadt</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="pagedecor.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">    <!--Main Container-->
+    <div class="row ">  <!--Header Section-->
+        <div class="jumbotron custom col-lg-12 col-md-12">
+            <div class="logo"><img src="images/hrz_logo.jpg"></div>
+            <div class="header_text">
+                <h2>Technische Universität Darmstadt</h2>
+            </div>
+        </div>
+    </div> <!--End of Header Section-->
+    <div class="row"> <!--Body-->
+        <div class="intro col-md-12 col-lg-12">
+            <h3>Project Proposal, Computing time on the Lichtenberg Hochleistungsrechner</h3>
+            <ul style="list-style-type: square">
+                <li>For <b>small(test) accounts:</b> fill in this proposal (you do not need to upload a detailed proposal). Use the comment field (see 4.4) later on to tell us that you only apply for a test account.</li>
+                <li>Before you submit a new Proposal please fill in at least the project title, section 1.1 (Director), section 1.2 (Principal Investigator), section 1.3 (Manager) and 3.2 (Typical Single Run). Usually projects are required to also fill section 2.1 (Abstract) and section 3.7 (Software).</li>
+            </ul>
+            <div class="span12"></div>
+        </div>
+        <form role="form" class="form-horizontal">
+
+            <h3>1.Administrative Details</h3>
+            <div class="span5"></div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Project Title:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" id="title" placeholder="Enter Project Title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Proposing Institution(s):</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Federal state of the Proposing Institution:</label>
+                <div class="col-sm-3">
+                    <select class="form-control">
+                        <option>-- Please select--</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" >If not in the list, Please specify:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <h4>1.1 Director of the Institution</h4>
+            <div class="span5"></div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Title:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="titl" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3" >Last Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="lname" placeholder="">
+                </div>
+                <label class="control-label col-sm-2"  >First Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="fname" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Street:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="street" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Postal code:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="pcode" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">City:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="city" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Phone:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="phone" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Fax:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="fax" placeholder="">
+                </div>
+            </div>
+            <h4>1.2 Principal Investigator(If it is not the director)</h4>
+            <div class="span5"></div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Title:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="titl" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3" >Last Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="lname" placeholder="">
+                </div>
+                <label class="control-label col-sm-2"  >First Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="fname" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Street:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="street" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Postal code:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="pcode" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">City:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="city" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Phone:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="phone" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Fax:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="fax" placeholder="">
+                </div>
+            </div>
+            <h4>1.3 Project Manager/Main researcher</h4>
+            <div class="span5"></div>
+            <p>The project manager is responsible for the administrative tasks of the project, e.g. distribution und supervision of the granted logins and resources.</p>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Title:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Last Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">First Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Street:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Postal Code:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">City:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Phone:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Fax:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Email:</label>
+                <div class="col-sm-2">
+                    <input type="email" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <h4>1.4 Researchers</h4>
+            <div class="span5"></div>
+            <p>Please list all persons who need access. List the director (sec. 1.1), the principal investigator (sec 1.2), the manager (sec. 1.3), and the researchers (sec. 1.4) if and only if they need an account. All "researchers" will be added to the mailing list hpc-nutzer@lists.tu-darmstadt.de.Please give your professional e-mail address. E-mail addresses such as Gmail and Hotmail are not accepted</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th>1</th>
+                            <th class="col-md-2">Title</th>
+                            <th class="col-md-2">Last name</th>
+                            <th class="col-md-2">First name</th>
+                            <th class="col-md-2">Phone</th>
+                            <th class="col-md-5">Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="number" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="email" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <label class="control-label col-sm-2">Gender</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>-- --</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <label class="control-label col-sm-2">Nationality(required)</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>--Select--</option>
+                    </select>
+                </div>
+                <label class="control-label col-sm-1">TU-ID</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-6"> If you want to use certificates for login, enter the distinguished name of the researcher here</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" placeholder="-- If you want to use certificates for login, enter the distinguished name of the researcher here --">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Lichtenberg Account exits?</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th>2</th>
+                            <th class="col-md-1">Title</th>
+                            <th class="col-md-3">Last name</th>
+                            <th class="col-md-3">First name</th>
+                            <th class="col-md-2">Phone</th>
+                            <th class="col-md-3">Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="number" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="email" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-2">Gender</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>-- --</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+
+                </div>
+                <label class="control-label col-sm-2">Nationality(required)</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>--Select--</option>
+                    </select>
+                </div>
+                <label class="control-label col-sm-1">TU-ID</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-6"> If you want to use certificates for login, enter the distinguished name of the researcher here</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" placeholder="-- If you want to use certificates for login, enter the distinguished name of the researcher here --">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Lichtenberg Account exits?</label>
+                </div>
+            </div>
+            <p>If the fields above are not sufficient, you can add further researchers here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="2" cols="70"></textarea>
+                </div>
+            </div>
+            <h4>1.5 Project Partners</h4>
+            <div class="span5"></div>
+            <p>If project partners from outside the proposing institute are involved, please list them here. Project partners will not be granted access to the Lichtenberg computer unless you specify them as "Researchers" (in section 1.3), too.</p>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Title:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Name of Institute:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Last Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">First Name:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Street:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Postal code & City:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Email:</label>
+                <div class="col-sm-2">
+                    <input type="email" class="form-control input-sm" id="" placeholder="">
+                </div>
+                <label class="control-label col-sm-2">Phone:</label>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control input-sm" id="" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-5"><input type="checkbox"> TU-ID exits?</label>
+                    <label class="control-label col-sm-4"><input type="checkbox"> Lichtenberg Account exits?</label>
+                </div>
+
+
+            </div>
+            <p>If the fields above are not sufficient, you can add further entries here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="2" cols="70"></textarea>
+                </div>
+            </div>
+            <h3>2. Project Details</h3>
+            <div class="span5"></div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Research area:</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>-- --</option>
+                    </select>
+                </div>
+                <label class="control-label col-sm-2">If not in the list, please specify:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <!--Data to be added yet-->
+            <div class="form-group">
+                <label class="control-label col-sm-3">Estimated end date of the entire project:</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <h4>2.1 Abstract</h4>
+            <div class="span5"></div>
+            <p>The abstract of the project should be written in English, since this text will be published to demonstrate ongoing work on Lichtenberg computer.
+                It should consist of about 300 words. Typically, this abstract will be published by LRZ on the project web pages (see also 5.)</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="15" cols="100"></textarea>
+                </div>
+            </div>
+            <h4>2.2 Detailed Description/Report</h4>
+            <div class="span5"></div>
+
+            <p>(This section may be omitted if you just apply for a test account.)</p>
+            A detailed description of the project is supposed to outline the state of the art, the procedures used, and references of work already accomplished. The following topics should be included in your description:
+            <ul>
+                <li>research field (e.g. Chemistry),</li>
+                <li>underlying theory (e.g. Quantum Mechanics),</li>
+                <li>description of goals (e.g. Computation of Helicopter Aerodynamics),</li>
+                <li>mathematical model (e.g. Navier-Stokes-Equations with turbulence model),</li>
+
+                <li>numerical methods (e.g. Finite Volume Method with Multigrid on unstructured tetrahedron grids,</li>
+                <li>state of the art,</li>
+                <li>calculation and rationale of resources ( CPU-time, memory number of grid nodes, number of time steps, ...),</li>
+                <li>expected performance and scaling behaviour,</li>
+                <li>practical relevance of expected results, time frame and work plan,</li>
+                <li>necessity for use of high performance computing,</li>
+
+                <li>experiences of the proposer with HPC-technologies, previous results and/or limits from other platforms,</li>
+                <li>relevant literature or publications.</li>
+            </ul>
+            <p>This description is to be sent in separate file. You may upload that file <strong>after</strong> you have completed and successfully submitted this proposal form, using the upload form at <a href="https://www.lrz.de/services/compute/supermuc/upload-report">https://www.lrz.de/services/compute/supermuc/upload-report</a>.</p>
+
+            It is strongly recommended to follow in your proposal the structure and hints given in following templates:
+            <ul>
+                <li>Click here for the <a href="#">proposal template pdf-file</a></li>
+                <li>Click here for the <a href="#">proposal template docx-file</a></li>
+                <li>Click here for the <a href="#">proposal template rtf-file</a></li>
+            </ul>
+            <h3>Technical Description</h3>
+            <div class="span5"></div>
+            <p>Please have a look at the <a href="#" title="hlrb-hardware">hardware overview</a> of the SuperMUC first, and verify that you really need a machine of this size for your project. This CPU time requirement must be justified in a detailed project description (sec. 2.2).</p>
+            <p><em>In the following, always count the number of individual processors (cores) that your program will need.</em></p>
+            <h4>3.1 Resource requirements of the project</h4>
+            <div class="span5"></div>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+
+                            <th class="col-sm-1"></th>
+                            <th class="col-sm-2"></th>
+                            <th class="col-sm-3"></th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ><label class="control-label">CPU Time:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="million core hours/year"></td>
+                            <td ><p>(This is the total compute time for your project, e.g.:<br> wall clock time for parallel application*number of processors*number of runs + testing + etc).</p></td>
+
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">Accelerator Type & Accelerator Time:</label></td>
+                            <td ><label class="control-label "><input type="checkbox"> Option 1</label>
+                                <label class="control-label "><input type="checkbox"> Option 2</label>
+                            </td>
+                            <td ><p>(This is the Accelerator Type and Time).</p></td>
+
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">Memory:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><p>(This is the memory for the cluster).</p></td>
+
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">Home:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="100 GByte"> </td>
+                            <td ><p>(Th(total for home directories. Change this default value only if it is really necessary! This is an expensive resource. Large data sets should be stored on the pseudo temporary files and/or written to tape)</p></td>
+
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">Work:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="GByte"> </td>
+                            <td ><p>(total for pseudo temporary files)</p></td>
+
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p>Please have a look at the technical <a href="#" title="hlrb-files">documentation (&quot;Files&quot;)</a> for usage and characteristics of the different file systems (HOME and PTMP).</p>
+            <h4>3.2 Resource requirements of a typical single batch run</h4>
+            <div class="span5"></div>
+            <p>For a typical single run (as well as for a typical interactive run), fill in the expected average values in the production phase of your project (in contrast to developping and debugging phases). Of course, the numbers can only be estimated. Use section 3.9 (Special Requirements) for extraordinary maximum resource requirements.</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom2">
+                        <thead >
+                        <tr>
+
+                            <th class="col-sm-1"></th>
+                            <th class="col-sm-2"></th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody >
+                        <tr>
+                            <td ><label class="control-label">Max. number of cores:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="cores"> </td>
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">CPU time:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="CPU hours"> </td>
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">main memory:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="GByte"> </td>
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">disk space:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="GByte"> </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <h4>3.3 Data Transfer</h4>
+            <div class="span5"></div>
+            <p>Pleae estimate the amount and frequency of data transfers between end user's location and Lichtenberg cluster</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom2">
+                        <thead>
+                        <tr>
+                            <th class="col-sm-1"></th>
+                            <th class="col-sm-2"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ><label class="control-label">Amount of Data:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="GByte per month"> </td>
+                        </tr>
+                        <tr>
+                            <td ><label class="control-label">Frequency of transfer:</label></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder="transfers per month"> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <h4>3.4 Software</h4>
+            <div class="span5"></div>
+            <p>Please check which programming languages, programming models, tools, and libraries you intend to use (multiple checks are possible). You may list other software packages as well. The LRZ will then check if the software is available or can be ported with reasonable effort.</p>
+            <label class="control-label">Programming Languages</label>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-2"><input type="checkbox"> Fortran 77</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Fortran 90/95</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Fortran 2003</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> c</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> c++</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> Java</label>
+                    <label class="control-label col-sm-1">Others:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control input-sm" id="" placeholder="">
+                    </div>
+
+                </div>
+            </div>
+
+            <label class="control-label">Programming models for parallelization</label>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-2"><input type="checkbox"> MPI</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> OpenMP</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> SHMEM</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Hybrid(MPI + OpenMP)</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> PGAS(CoArrays,UPC,etc)</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> Pthreads</label>
+                    <label class="control-label col-sm-1">Others:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control input-sm" id="" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <label class="control-label">Tools</label>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-3"><input type="checkbox"> Performance Monitor(histx,pfmon,etc.)</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Vampir(Intel Tracing Tools)</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> TotalView</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> Vtune</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Intel Threading Tools</label>
+                    <label class="control-label col-sm-1">Others:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control input-sm" id="" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <label class="control-label">Libraries</label>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-3"><input type="checkbox"> BLAS,incl. Atlas, Goto etc.</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> MKL Intel Math Kernel Library </label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> LAPACK</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> ScalAPACK</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> NAG</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> PETSC</label>
+                    <label class="control-label col-sm-1"><input type="checkbox"> FFTW</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="checkbox">
+                    <label class="control-label col-sm-2"><input type="checkbox"> GSL</label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> HDF5, NetCDF(I/O libraries) </label>
+                    <label class="control-label col-sm-2"><input type="checkbox"> Metis,pametis</label>
+                    <label class="control-label col-sm-1">Others:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control input-sm" id="" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <h4>3.5 Test Accounts</h4>
+            <div class="span5"></div>
+            <p>The steering committee grants test accounts with restricted resources before the project is finally reviewed. Those test accounts are granted for any project proposal that comes with a sufficiently explanatory abstract and/or detailed description.</p>
+            <p>However, the risk of useless work in case the project is rejected remains with the project proposer.</p>
+            <p>The duration of a testproject is at most one year.</p>
+            <h4>3.7 Special Requirements</h4>
+            <div class="span5"></div>
+            <p>In case you have special requirements for your project (block operation, time-critical execution of the project, software, licenses etc.), you may list them here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="10" cols="70"></textarea>
+                </div>
+            </div>
+            <h3>4. Related Activities and other/former Project Proposals</h3>
+            <div class="span5"></div>
+            <h4>4.1 HPC in use</h4>
+            <div class="span5"></div>
+            <p>Please list the supercomputers that you intend to use for the proposed project in the future:</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr style="float: left;">
+                            <th >S.No</th>
+                            <th >Computer name, Institution</th>
+                        </tr>
+                        </thead>
+                        <tbody style="float:left;">
+                        <tr>
+                            <td >1.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >2.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >3.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >4.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >5.</td>
+                            <td ><input type="text" class="form-control input-sm"  size="60" id="" placeholder=""> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p>If the fields above are not sufficient, you can add further entries here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="2" cols="70"></textarea>
+                </div>
+            </div>
+            <h4>4.2 Intended Use of HPC in the Future</h4>
+            <div class="span5"></div>
+            <p>Please list the supercomputers that you intend to use for the proposed project in the future:</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr style="float: left;">
+                            <th >S.No</th>
+                            <th >Computer type/name, Institution</th>
+                        </tr>
+                        </thead>
+                        <tbody style="float:left;">
+                        <tr>
+                            <td >1.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >2.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >3.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >4.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        <tr>
+                            <td >5.</td>
+                            <td ><input type="text" class="form-control input-sm" size="60" id="" placeholder=""> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p>If the fields above are not sufficient, you can add further entries here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="2" cols="70"></textarea>
+                </div>
+            </div>
+            <h4>4.3 Other/Former Project Proposal</h4>
+            <div class="span5"></div>
+            <div class="form-group row">
+                <label class="control-label col-sm-4">Has the project already been submitted or is intended to be submitted elsewhere ?</label>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>-- --</option>
+                    </select>
+                </div>
+            </div>
+            <p><em>If it has not, you may skip this section.</em> Otherwise give details (if known) on that submission:</p>
+            <div class="form-group">
+                <label class="control-label col-sm-4">Title of the former project:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4">Institution that is reviewing/has reviewed that project:</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4">Record token (&quot;Aktenzeichen&quot;, if known):</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control input-sm" id="" placeholder="">
+                </div>
+            </div>
+            <p>Nominated expert reviewers (&quot;Fachgutachter&quot;) for that former project, if known:</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th class="col-md-1">Title</th>
+                            <th class="col-md-3">Last name</th>
+                            <th class="col-md-3">First name</th>
+                            <th class="col-md-2">Institution</th>
+                            <th class="col-md-3">City</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td >1</td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td >2</td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td >3</td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td >4</td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td >5</td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                            <td ><input type="text" class="form-control input-sm" id="" placeholder=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p>If the fields above are not sufficient, you can add further entries here:</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="2" cols="70"></textarea>
+                </div>
+            </div>
+            <h4>4.4 Other References and Comments</h4>
+            <div class="span5"></div>
+            <p>Please list references on former submissions and revisions of this or similar projects, etc. You may add <span class="c1">any further comments</span> on your project, too.<br> Here you can also state, that you apply for a test account only.</p>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea name="Abstract" class="form-control" rows="10" cols="70"></textarea>
+                </div>
+            </div>
+            <h3>5.Submission</h3>
+            <div class="span5"></div>
+            <p>Please check the following conditions affirming that any person entered in 1.1, 1.2, 1.3 and 1.4 or being added later to the project</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th class=""></th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >accepts the Operating and Usage Regulations for the HLRB (German only),</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >accepts the Usage Regulations for the Information Processing Systems  (German only),</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >accepts the Policies for the File Systems  (e.g. high water mark deletion, no backup for $SCRATCH or $WORK, etc.)</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >ill report on the progress of the project and publish the results in adequate form, see regulations and hints on status reports (In case of substantiated interest, the proposer may be released from this obligation),</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >knows that accounts and passwords must not be given away or be transferred to other persons, and</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >agrees on the following privacy statement:
+                                The project description (incl. name/address of institution and project manager, abstract), reports on the project as well as resource data may be reused and published.
+                                The submitted data may be given to other GAUSS computing centers to
+                                coordinate the activities within the national HPC infrastructure.
+                                The submitted data may be transmitted to external reviewers, and will be stored in the project database for the purpose of evaluation of the proposal, execution of the project, notification of users, and accounting.
+                                In case of substantiated interest and consultation of HRZ by mail or phone, a more restrictive data protection may be granted to a user.</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p>I have verified that the results which will be achieved by the project are not liable to any EC Dual Use Regulation. In particular</p>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >I affirm that the results achieved within the project are not comprised in the Annex I of the Regulation (EC) No 428/2009 (EC Dual Use Regulation) or in Part I of the Export Control List.</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >I affirm that the results are not related to any activities described in article 4 paragraph 1 of the Regulation (EC) No 428/2009.</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >In case a project researcher is citizen of a country with armament embargo, I affirm that the results are not associated with any military use, as described in article 4 paragraph 2 of the Regulation (EC) No 428/2009.)</td>
+
+                        </tr>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >I affirm that the results do not violate any of the embargo regulations.</td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table class="table custom">
+                        <thead>
+                        <tr>
+                            <th></th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td ><input type="checkbox"></td>
+                            <td >I hereby confirm that, publications arising form this project, the computing time grant from Lictenberg cluster will be acknowledged and that references to these publications will be sent per email to @hrz.tu-darmstadt.de</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <p><strong>Please note: Unless you accepted all ten buttons above, your new proposal won't be posted!</strong><br> Please contact HRZ if you have reasons not to accept all points.</p>
+            <h3>5. Signature</h3>
+            <div class="span5"></div>
+            <p>After pressing the "Submit data to HRZ" button you will receive a pdf of this proposal.Please print it, sign it(responsible Principal Investigator) and send this signed document to <br>
+            <address>Bewirtschaftungsstelle LB, HRZ, Mornewegestraße 30, 64287 Darmstadt</address></p>
+            <div class="form-group">
+                <div class=" col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit data to HRZ</button>
+                </div>
+            </div>
+            <hr>
+            <p>Don't hit this button unwillingly: <input type="reset" value="Reset all form entries"></input><br> It cancels all data entries that you have typed in so far!</p>
+
+
+
+
+        </form>
+    </div>
+
+</div> <!--End of Main Container-->
+
+
+
+
+
+</body>
+</html>
