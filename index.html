@@ -626,7 +626,7 @@
                         <option value="Informatics/Computer Sciences">Informatics/Computer Sciences</option> <option value="Material Science">Material Science</option>
                         <option value="Mathematics">Mathematics</option> <option value="Medicine">Medicine</option> <option value="Physics - Solid State">Physics - Solid State Physics</option>
                         <option value="Physics - High Energy Physics">Physics - High Energy Physics</option> <option value="Physics - others">Physics - others</option>
-                        <option value=Plasma Physics">Plasma Physics</option> <option value="Social Sciences">Social Sciences</option>
+                        <option value="Plasma Physics">Plasma Physics</option> <option value="Social Sciences">Social Sciences</option>
                         <option value="Support/Benchmarking">Support/Benchmarking</option> <option value="Other">Others</option>
                     </select>
                 </div>
@@ -822,7 +822,7 @@
                     <label class="control-label col-sm-2"><input type="checkbox" name="hybrid" value="1"> Hybrid(MPI + OpenMP)</label>
                     <label class="control-label col-sm-2" name="models_other" >Others:</label>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control input-sm" id="" placeholder="">
+                        <input type="text" class="form-control input-sm" id="" name="model_other" placeholder="">
                     </div>
                 </div>
             </div>
@@ -861,7 +861,7 @@
             <p>In case you have special requirements for your project (block operation, time-critical execution of the project, software, licenses etc.), you may list them here:</p>
             <div class="form-group">
                 <div class="col-xs-12 ">
-                    <textarea name="Abstract" class="form-control" rows="10" name="spl_req"></textarea>
+                    <textarea  class="form-control" rows="10" name="spl_req"></textarea>
                 </div>
             </div>
             <h3>4.Submission</h3>
@@ -879,12 +879,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agree1"></td>
                             <td >will report on the progress of the project and publish the results in adequate form, see regulations and hints on status reports (In case of substantiated interest, the proposer may be released from this obligation),</td>
 
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td></td>
+                            <td><input type="checkbox" name="agree2"></td></td>
                             <td>Confirms that,publications arising from this project, the computing time grant from Lichtenberg cluster will be acknowledged and that references to these publications will be sent per email to @hrz.tu-darmstadt.de</td>
                         </tr>
                         </tbody>
@@ -905,22 +905,22 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agree3"></td>
                             <td >I affirm that the results achieved within the project are not comprised in the Annex I of the Regulation (EC) No 428/2009 (EC Dual Use Regulation) or in Part I of the Export Control List.</td>
 
                         </tr>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agree4"></td>
                             <td >I affirm that the results are not related to any activities described in article 4 paragraph 1 of the Regulation (EC) No 428/2009.</td>
 
                         </tr>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agree5"></td>
                             <td >In case a project researcher is citizen of a country with armament embargo, I affirm that the results are not associated with any military use, as described in article 4 paragraph 2 of the Regulation (EC) No 428/2009.)</td>
 
                         </tr>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agree6"></td>
                             <td >I affirm that the results do not violate any of the embargo regulations.</td>
                         </tr>
 
@@ -941,7 +941,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td ><input type="checkbox"></td>
+                            <td ><input type="checkbox" name="agreefinal"></td>
                             <td >I hereby confirm that, publications arising form this project, the computing time grant from Lictenberg cluster will be acknowledged and that references to these publications will be sent per email to @hrz.tu-darmstadt.de</td>
 
                         </tr>
@@ -950,7 +950,7 @@
 
                 </div>
             </div>
-            <p><strong>Please note: Unless you accepted all ten buttons above, your new proposal won't be posted!</strong><br> Please contact HRZ if you have reasons not to accept all points.</p>
+            <p><strong>Please note: Unless you accepted all seven conditions above, your new proposal won't be posted!</strong><br> Please contact HRZ if you have reasons not to accept all points.</p>
             <h3>5. Signature</h3>
             <div class="span5"></div>
             <p>After pressing the "Submit data to HRZ" button you will receive a pdf of this proposal.Please print it, sign it(responsible Principal Investigator) and send this signed document to <br>
