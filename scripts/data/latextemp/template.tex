@@ -1,0 +1,236 @@
+\documentclass[accentcolor=tud9c,nochapname,11pt]{tudexercise}
+
+%ä <- steht nur hier, damit manche Editoren den Unicode richtig erkennen...
+\usepackage{amssymb} % needed for math
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{scrhack}
+\usepackage{fixltx2e}
+\usepackage{microtype}
+\usepackage{datetime}
+
+\linespread{1.1}
+
+\usepackage{hyperref}
+\usepackage{booktabs}
+\setlength{\parindent}{0pt}
+
+\makeatletter
+\newcommand\saferead[1]{%
+  \bgroup
+  \let\do\@makeother
+  \dospecials\catcode`\ 10
+  \input{#1}%
+  \egroup 
+}
+\makeatother
+
+\begin{document}
+
+\title{Projektbewirtschaftung \\ Lichtenberg-Rechner}
+\subtitle{Project Proposal, Computing time on the Lichtenberg Hochleistungsrechner}
+\maketitle
+%\chapter{Mein erstes Kapitel}
+
+\begin{itemize}
+	\item \textbf{For small(test) accounts:} fill in this proposal (you do not need to upload a detailed proposal). Use the comment field (see 4.4) later on to tell us that you only apply for a test account.
+	\item Before you submit a new Proposal please fill in at least the project title, section 1.1 (Director), section 1.2 (Principal Investigator), section 1.3 (Manager) and 3.2 (Typical Single Run). Usually projects are required to also fill section 2.1 (Abstract) and section 3.7 (Software).
+\end{itemize}
+
+\section{Administrative Details}
+
+\begin{Form}
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxx: \= \kill  \\% This is needed for the right tab width
+\textbf{Project Title:}  \saferead{proj_title.txt} \\
+\textbf{Proposing Institution:}  \saferead{prop_inst.txt} \\
+\textbf{Federal State of the proposing Institution:}  \saferead{prop_state.txt} \\
+\end{tabbing}
+\subsection{Director of the Institution}
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Title:}   \saferead{dir_title.txt} \\
+\textbf{Last name:} \saferead{dir_lname.txt}  \> \>  \textbf{First name:} \saferead{dir_fname.txt}  \\
+\textbf{Street:} \saferead{dir_street.txt}  \\
+\textbf{Postal code:} \saferead{dir_pcode.txt}  \> \> \textbf{City:} \saferead{dir_city.txt}  \\
+\textbf{Phone:} \saferead{dir_phone.txt} \> \> \textbf{Fax:} \saferead{dir_fax.txt}  \\
+\end{tabbing}
+\subsection{Principal Investigator(If it is not the Director)}
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Title:} \saferead{pi_tite.txt} \\
+\textbf{Last name:} \saferead{pi_lname.txt}  \> \>  \textbf{First name:} \saferead{pi_fname.txt}  \\
+\textbf{Street:} \saferead{pi_street.txt}  \\
+\textbf{Postal code:} \saferead{pi_pcode.txt}   \> \> \textbf{City:} \saferead{pi_city.txt}  \\
+\textbf{Phone:} \saferead{pi_phone.txt}  \> \> \textbf{Fax:} \saferead{pi_fax.txt}  \\
+\end{tabbing}
+\subsection{Project Manager/Main Researcher}
+The Project manager is responsible for the administrative tasks of the project, e.g. distribution und supervision of the granted logins and resources.   \\
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Title:}  \saferead{pm_title.txt} \\
+\textbf{Last name:} \saferead{pm_lname.txt} \> \>  \textbf{First name:} \saferead{pm_fname.txt}  \\
+\textbf{Street:} \saferead{pm_street.txt}  \\
+\textbf{Postal code:} \saferead{pm_pcode.txt}   \> \> \textbf{City:} \saferead{pm_city.txt} \\
+\textbf{Phone:} \saferead{pm_phone.txt}  \> \> \textbf{Fax:} \saferead{pm_fax.txt}   \\
+\textbf{Email:} \saferead{pm_email.txt}  \> \> \textbf{Gender:}  \saferead{pm_gender.txt}    \\
+\textbf{Nationality:} \saferead{pm_nat.txt}  \> \>  \textbf{TU-ID:}  \saferead{pm_tuid.txt} \\
+\textbf{Lichtenberg account exists?} \saferead{pm_lichtacc.txt}
+\end{tabbing}
+\subsection{Researchers}
+All "researchers" will be added to the mailing list hkhlr-users@lists.hrz-darmstadt.de.Please give your professional e-mail address. E-mail addresses such as Gmail and Hotmail are not accepted. \\
+\begin{table}[h!]
+							\begin{center}
+							\begin{tabular}{cccccc}
+							\toprule
+								Nr & Title & Last name & First name & Phone & E-Mail\\
+							\midrule
+							  1 & \saferead{res1_title.txt} & \saferead{res1_lname.txt} & \saferead{res1_fname.txt} & \saferead{res1_phone.txt} & \saferead{res1_email.txt}\\
+							\bottomrule
+							\end{tabular}
+					\end{center}
+			\end{table} 
+	  	\begin{center}
+				\textbf{Gender:} \saferead{res1_gender.txt} \hspace{35pt} \textbf{Nationality(required):} \saferead{res1_nat.txt} \hspace{35pt} \textbf{TU-Id:} \saferead{res1_tuid.txt} \\
+				\end{center}}
+\textbf{Lichtenberg account exists?} \saferead{res1_lichtacc.txt}\\
+\begin{table}[h!]
+							\begin{center}
+							\begin{tabular}{cccccc}
+							\toprule
+								Nr & Title & Last name & First name & Phone & E-Mail\\
+							\midrule
+							  2 & \saferead{res2_title.txt} & \saferead{res2_lname.txt} & \saferead{res2_fname.txt} & \saferead{res2_phone.txt} & \saferead{res2_email.txt}\\
+							\bottomrule
+							\end{tabular}
+					\end{center}
+			\end{table} 
+	  	\begin{center}
+				\textbf{Gender:} \saferead{res2_gender.txt} \hspace{35pt} \textbf{Nationality(required):} \saferead{res2_nat.txt} \hspace{35pt} \textbf{TU-Id:} \saferead{res2_tuid.txt} \\
+				
+			\end{center}}			
+\textbf{Lichtenberg account exists?} \saferead{res2_lichtacc.txt}\\
+If the fields above are not sufficient for login, you can add further researchers here:  \\
+\fbox{
+	\begin{minipage}{6.5in}
+		\vspace{0.1in} \\
+		\saferead{more_res_info.txt}
+	\end{minipage}
+	} 
+\subsection{Project Partners}
+If project partners from outside the proposing institute are involved, please list them here. Project partners will not be granted access to the Lichtenberg Computer unless you specify them as "Researchers" (in section 1.4), too.
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Title:} \saferead{pp_title.txt} \> \> \textbf{Name of the Institute:} \saferead{pp_inst.txt} \\
+\textbf{Last name:} \saferead{pp_lname.txt}  \> \>  \textbf{First name:} \saferead{pp_fname.txt}  \\
+\textbf{Street:} \saferead{pp_street.txt} \> \> \textbf{Postal code:} \saferead{pp_pcode.txt}  \\
+\textbf{City:} \saferead{pp_city.txt} \> \> \textbf{Email:} \saferead{pp_email.txt}  \\
+\textbf{Phone:} \saferead{pp_phone.txt}   \> \> \textbf{TU-ID:} \saferead{pp_tuid.txt}\\
+%\ \CheckBox[name=licht_acc,charsize=12pt,checked]{Lichtenberg account exists ?}	
+\textbf{Lichtenberg account exists ?} \saferead{pp_lichtacc.txt}
+\end{tabbing}
+
+If the fields above are not sufficient for login, you can add further researchers here:  \\
+\fbox{
+	\begin{minipage}{6.5in}
+		 \vspace{0.1in} \\
+		 \saferead{more_pp_info.txt}
+	\end{minipage}
+	} 
+\section{Project Details}
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Research area:}\saferead{research_area.txt}   \\
+\textbf{Estimated end date of the entire project:} \saferead{proj_enddate.txt} \\
+\textbf{If you dont apply for a full year,then how many hours?:} \saferead{proj_hours.txt}
+
+\end{tabbing}
+\subsection{Abstract}
+The abstract of the project should be written in English, since this text will be published to demonstrate ongoing work on Lichtenberg computer. It should consist 150 to 300 words. Typically, this abstract will be published by LRZ on the project web pages (see also 5.)\\
+\fbox{
+	\begin{minipage}{6.5in}
+		 \vspace{0.1in}\\
+		 \saferead{abstract.txt}
+	\end{minipage}
+	} 
+\section{Technical Description}
+Please have a look at the hardware overview of the SuperMUC first, and verify that you really need a machine of this size for your project. This CPU time requirement must be justified in a detailed project description (sec. 2.2). \\
+
+In the following, always count the number of individual processors (cores) that your program will need.\\
+\subsection{Project class}
+\textbf{For this project the following project class is planned:} \saferead{proj_class.txt} \\
+\subsection{Detailed resource requirements of the project}
+Please refer our website for further information \\
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{CPU Time:} \saferead{cpu_time.txt}  \\
+\textbf{Accelerator Type:}  \> \> \textbf{NVIDIA:} \saferead{acce_nvidia.txt}  \hspace{40pt} \textbf{Xeon-PHI:} \saferead{acce_xeonphi.txt} \\
+\textbf{Memory per core:} \saferead{mem_pc.txt}  \\
+\textbf{Home:} \saferead{home_dir.txt} \\
+\textbf{Work:} \> \> \textbf{/work/projects} \saferead{work_proj.txt} \hspace{65pt}  \textbf{/work/scratch} \saferead{work_scratch.txt} \\
+\end{tabbing}
+Please have a look at the technical documentation ("Files") for usage and characteristics of the different file systems (HOME and PTMP).
+\subsection{Resource requirements of a typical single batch run}
+For a typical single run (as well as for a typical interactive run), fill in the expected average values in the production phase of your project (in contrast to developping and debugging phases). Of course, the numbers can only be estimated. Use section 3.9 (Special Requirements) for extraordinary maximum resource requirements. \\
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  \= \kill
+\textbf{Max. number of cores:} \saferead{req_maxcores.txt}  \\
+\textbf{CPU Time:} \saferead{req_cputime.txt}  \\
+\textbf{Main memory/ per core:} \saferead{req_mmpc.txt} \\
+\textbf{Disk space:} \saferead{req_dspace.txt}\\
+\end{tabbing}
+\subsection{Software}
+Please check which programming languages, programming models, tools, and libraries you intend to use (multiple checks are possible). You may list other software packages as well. The LRZ will then check if the software is available or can be ported with reasonable effort. \\
+\subsubsection{Programming Languages}
+\textbf{The selected language(s) are:} \saferead{proglang.txt} \\
+\subsubsection{Programming models for parallelization}
+\textbf{The selected Programming models are:} \saferead{progmodels.txt} \\
+\subsubsection{Tools}
+\textbf{The selected Tools are:} \saferead{tools.txt} \\
+\subsubsection{Libraries}
+\textbf{The selected Libraries are:} \saferead{libraries.txt}\\
+\subsection{Small Projects}
+The steering committee grants test accounts with restricted resources before the project is finally reviewed. Those test accounts are granted for any project proposal that comes with a sufficiently explanatory abstract and/or detailed description.
+However, the risk of useless work in case the project is rejected remains with the project proposer.
+The duration of a testproject is at most one year. \\
+\subsection{Special Requirements}
+In case you have special requirements for your project (block operation, time-critical execution of the project, software, licenses etc.), you may list them here: \\
+\fbox{
+	\begin{minipage}{6.5in}
+		 \vspace{0.1in} \\
+		 \saferead{spl_req.txt}
+	\end{minipage}
+	} 
+\section{Submission}
+Please check the following conditions affirming that any person entered in 1.1, 1.2, 1.3 and 1.4 or being added later to the project.\\
+\begin{tabbing}
+
+\toprule
+\input{agree1.txt} \hspace{10pt} will report on the progress of the project and publish the results in adequate form, see regulations and hints on status reports (In case of substantiated interest, the proposer may be released from this obligation)\\
+\toprule
+\input{agree2.txt} \hspace{10pt} Confirms that,publications arising from this project, the computing time grant from Lichtenberg cluster will be acknowledged and that references to these publications will be sent per email to @hrz.tu-darmstadt.de \\
+\\
+I have verified that the results which will be achieved by the project are not liable to any EC Dual Use Regulation. In particular\\
+\\
+\toprule
+\input{agree3.txt}\hspace{10pt} I affirm that the results achieved within the project are not comprised in the Annex I of the Regulation (EC) No 428/2009 (EC Dual Use Regulation) or in Part I of the Export Control List.\\
+\toprule
+\input{agree4.txt} \hspace{10pt} I affirm that the results are not related to any activities described in article 4 paragraph 1 of the Regulation (EC) No 428/2009.\\
+\toprule
+\input{agree5.txt} \hspace{10pt}In case a project researcher is citizen of a country with armament embargo, I affirm that the results are not associated with any military use, as described in article 4 paragraph 2 of the Regulation (EC) No 428/2009.)\\
+\toprule
+\input{agree6.txt} \hspace{10pt}I affirm that the results do not violate any of the embargo regulations.\\
+\toprule
+\input{agreefinal.txt} \hspace{10pt} I hereby confirm that, publications arising form this project, the computing time grant from Lictenberg cluster will be acknowledged and that references to these publications will be sent per email to @hrz.tu-darmstadt.de\\
+\\
+
+\end{Form}
+\vspace{6cm}
+Your Project Nr. is: \framebox[4cm][s]{\input{projnr.txt}} \saferead{timestamp.txt}\\
+\vspace{2cm}
+ \hrule width 0.5\textwidth \\
+ \vspace{5pt}
+Signature \& Date
+
+\end{document}

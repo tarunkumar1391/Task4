@@ -13,3 +13,26 @@ function pstate(){
 
 
 }
+function pp(){
+   if(document.getElementById('yescheck').checked){
+       document.getElementById('pptuid').style.display = '';
+   }else if(document.getElementById('nocheck').checked){
+       document.getElementById('pptuid').style.display = 'none';
+   }
+
+}
+function resarea(){
+    var a = document.getElementById('res_ar');
+    var b = document.getElementById('reslabel');
+    var c = document.getElementById('resareavalue');
+
+    if(a.value === 'Other'){
+        b.style.display='';
+        c.style.display='';
+    }else{
+        b.style.display='none';
+        c.style.display='none';
+    }
+
+
+}

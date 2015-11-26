@@ -48,7 +48,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-3">Federal state of the Proposing Institution:</label>
                 <div class="col-sm-3">
-                    <select class="form-control" name="prop_state"  id="prop_st">
+                    <select class="form-control" name="prop_state"  id="prop_st" required onclick="pstate()">
                         <option>-- Please select--</option><option value="Baden-Württemberg">Baden-Württemberg</option>
                         <option value="Bayern">Bayern</option> <option value="Berlin">Berlin</option>
                         <option value="Brandenburg">Brandenburg</option> <option value="Bremen">Bremen</option>
@@ -94,7 +94,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Postal code:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="dir_pcode" placeholder="">
+                    <input type="number" class="form-control input-sm" name="dir_pcode" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">City:</label>
                 <div class="col-sm-2">
@@ -104,11 +104,11 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Phone:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="dir_phone" placeholder="">
+                    <input type="number" class="form-control input-sm" name="dir_phone" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">Fax:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="dir_fax" placeholder="">
+                    <input type="number" class="form-control input-sm" name="dir_fax" placeholder="">
                 </div>
             </div>
             <h4>1.2 Principal Investigator(If it is not the director)</h4>
@@ -138,7 +138,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Postal code:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pi_pcode" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pi_pcode" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">City:</label>
                 <div class="col-sm-2">
@@ -148,11 +148,11 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Phone:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pi_phone" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pi_phone" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">Fax:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pi_fax"  placeholder="">
+                    <input type="number" class="form-control input-sm" name="pi_fax"  placeholder="">
                 </div>
             </div>
             <h4>1.3 Project Manager/Main researcher</h4>
@@ -183,7 +183,7 @@
 
                 <label class="control-label col-sm-3">Postal Code:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pm_pcode" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pm_pcode" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">City:</label>
                 <div class="col-sm-2">
@@ -193,11 +193,11 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Phone:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pm_phone" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pm_phone" placeholder="">
                 </div>
                 <label class="control-label col-sm-2">Fax:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pm_fax" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pm_fax" placeholder="">
                 </div>
             </div>
             <div class="form-group row">
@@ -328,8 +328,8 @@
                 <div class="col-sm-2">
                     <select class="form-control" name="res1_gender">
                         <option>-- --</option>
-                        <option>Male</option>
-                        <option>Female</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                     </select>
                 </div>
                 <label class="control-label col-sm-2">Nationality(required)</label>
@@ -442,8 +442,8 @@
                 <div class="col-sm-2">
                     <select class="form-control" name="res2_gender">
                         <option>-- --</option>
-                        <option>Male</option>
-                        <option>Female</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                     </select>
 
                 </div>
@@ -528,7 +528,7 @@
             <p>If the fields above are not sufficient, you can add further researchers here:</p>
             <div class="form-group">
                 <div class="col-xs-12 ">
-                    <textarea name="Abstract" class="form-control" rows="10" name="more_res_info" ></textarea>
+                    <textarea  class="form-control" rows="10" name="more_res_info" ></textarea>
                 </div>
             </div>
             <h4>1.5 Project Partners</h4>
@@ -563,7 +563,7 @@
                 </div>
                 <label class="control-label col-sm-2">Postal code:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_pcode" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pp_pcode" placeholder="">
                 </div>
 
             </div>
@@ -586,12 +586,12 @@
                 </div>
                 <label class="control-label col-sm-2">TU-ID exists?  </label>
                 <label class="radio-inline col-sm-2">
-                    <input type="radio" name="pp_tuid" value="yes">yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="pp_tuid" value="no">No
+                    <input type="radio" name="pp_tuid" id="yescheck"  value="yes" onclick="pp();" required>yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  id="nocheck" name="pp_tuid" onclick="pp();" value="no">No
                 </label>
 
                 <!--<label class="control-label col-sm-1">TU-ID:  </label>-->
                 <div class="col-sm-2">
-                        <input type="text" class="form-control input-sm-2" name="pp_tuid" placeholder="" disabled>
+                        <input type="text" class="form-control input-sm-2" name="pp_tu_id" id="pptuid" style="display: none;">
                 </div>
             </div>
             <div class="form-group row">
@@ -607,7 +607,7 @@
             <p>If the fields above are not sufficient, you can add further entries here:</p>
             <div class="form-group">
                 <div class="col-xs-12 ">
-                    <textarea name="Abstract" class="form-control" rows="10" name="more_pp_info"></textarea>
+                    <textarea  class="form-control" rows="10" name="more_pp_info"></textarea>
                 </div>
             </div>
             <h3>2. Project Details</h3>
@@ -615,7 +615,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Research area:</label>
                 <div class="col-sm-2">
-                    <select class="form-control" name="research_area" > <option value="">-- please select --</option>
+                    <select class="form-control" name="research_area" id="res_ar" onclick="resarea()"> <option value="">-- please select --</option>
                         <option value="Astrophysics/Comology">Astrophysics/Cosmology</option>
                         <option value="Biophysics/Biology/Bioinformatics">Biophysics/Biology/Bioinformatics</option>
                         <option value="Chemistry">Chemistry</option> <option value="Metorology/Climatology/Oceanography">Climatology/Oceanography/Meteorology</option>
@@ -630,8 +630,8 @@
                         <option value="Support/Benchmarking">Support/Benchmarking</option> <option value="Other">Others</option>
                     </select>
                 </div>
-                <label class="control-label col-sm-2">If not in the list, please specify:</label>
-                <div class="col-sm-2">
+                <label class="control-label col-sm-2" id="reslabel" style="display: none;">If not in the list, please specify:</label>
+                <div class="col-sm-2" id="resareavalue" style="display: none;">
                     <input type="text" class="form-control input-sm" name="research_area_new" placeholder="">
                 </div>
             </div>
@@ -799,15 +799,15 @@
             <label class="control-label">Programming Languages</label>
             <div class="form-group row">
                 <div class="checkbox">
-                    <label class="control-label col-sm-2"><input type="checkbox" name="fortran77" value="1"> Fortran 77</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="fortran9095" value="1"> Fortran 90/95</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="fortran2003" value="1"> Fortran 2003</label>
-                    <label class="control-label col-sm-1"><input type="checkbox" name="c" value="1"> c</label>
-                    <label class="control-label col-sm-1"><input type="checkbox" name="cplusplus" value="1"> c++</label>
-                    <label class="control-label col-sm-1"><input type="checkbox" name="java" value="1"> Java</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_lang[]" value="Fortran 77"> Fortran 77</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_lang[]" value="Fortran 90/95"> Fortran 90/95</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_lang[]" value="Fortran 2003"> Fortran 2003</label>
+                    <label class="control-label col-sm-1"><input type="checkbox" name="prog_lang[]" value="c"> c</label>
+                    <label class="control-label col-sm-1"><input type="checkbox" name="prog_lang[]" value="cplusplus"> c++</label>
+                    <label class="control-label col-sm-1"><input type="checkbox" name="prog_lang[]" value="Java"> Java</label>
                     <label class="control-label col-sm-1">Others:</label>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control input-sm" name="soft_other"  placeholder="">
+                        <input type="text" class="form-control input-sm" name="proglang_other"  placeholder="">
                     </div>
 
                 </div>
@@ -816,24 +816,24 @@
             <label class="control-label">Programming models for parallelization</label>
             <div class="form-group row">
                 <div class="checkbox">
-                    <label class="control-label col-sm-2"><input type="checkbox" name="mpi" value="1"> MPI</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="openmp" value="1"> OpenMP</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="shmem" value="1"> SHMEM</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="hybrid" value="1"> Hybrid(MPI + OpenMP)</label>
-                    <label class="control-label col-sm-2" name="models_other" >Others:</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_models[]" value="MPI"> MPI</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_models[]" value="OpenMP"> OpenMP</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_models[]" value="SHMEM"> SHMEM</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="prog_models[]" value="Hybrid(MPI + OpenMP)"> Hybrid(MPI + OpenMP)</label>
+                    <label class="control-label col-sm-2" name="progmodels_other" >Others:</label>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control input-sm" id="" name="model_other" placeholder="">
+                        <input type="text" class="form-control input-sm"  name="progmodel_other" placeholder="">
                     </div>
                 </div>
             </div>
             <label class="control-label">Tools</label>
             <div class="form-group row">
                 <div class="checkbox">
-                    <label class="control-label col-sm-3"><input type="checkbox" name="perfmon" value="1"> Performance Monitor(histx,pfmon,etc.)</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="vampir" value="1"> Vampir(Intel Tracing Tools)</label>
-                    <label class="control-label col-sm-1"><input type="checkbox" name="totview" value="1"> TotalView</label>
-                    <label class="control-label col-sm-1"><input type="checkbox" name="vtune" value="1"> Vtune</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="intelthreadtools" value="1"> Intel Threading Tools</label>
+                    <label class="control-label col-sm-3"><input type="checkbox" name="tools[]" value="Performance Monitor(histx,pfmon,etc.)"> Performance Monitor(histx,pfmon,etc.)</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="tools[]" value="Vampir"> Vampir(Intel Tracing Tools)</label>
+                    <label class="control-label col-sm-1"><input type="checkbox" name="tools[]" value="TotalView"> TotalView</label>
+                    <label class="control-label col-sm-1"><input type="checkbox" name="tools[]" value="Vtune"> Vtune</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="tools[]" value="Intel Threading Tools"> Intel Threading Tools</label>
                     <label class="control-label col-sm-1">Others:</label>
                     <div class="col-sm-2">
                         <input type="text" class="form-control input-sm" name="tools_other" placeholder="">
@@ -843,12 +843,12 @@
             <label class="control-label">Libraries</label>
             <div class="form-group row">
                 <div class="checkbox">
-                    <label class="control-label col-sm-2"><input type="checkbox" name="mkl_imkl" value="1"> MKL Intel Math Kernel Library </label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="lapack" value="1"> LAPACK</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="Sapack" value="1"> ScalAPACK</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="nag" value="1"> NAG</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="petsc" value="1"> PETSC</label>
-                    <label class="control-label col-sm-2"><input type="checkbox" name="fftw" value="1"> FFTW</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="MKL"> MKL Intel Math Kernel Library </label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="LAPACK"> LAPACK</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="ScalAPACK"> ScalAPACK</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="NAG"> NAG</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="PETSC"> PETSC</label>
+                    <label class="control-label col-sm-2"><input type="checkbox" name="libraries[]" value="FFTW"> FFTW</label>
                 </div>
             </div>
             <h4>3.4 Small Projects</h4>
@@ -962,7 +962,7 @@
                 </div>
             </div>
             <hr>
-            <p>Don't hit this button unwillingly: <input type="reset" value="Reset all form entries"></input><br> It cancels all data entries that you have typed in so far!</p>
+            <p>Don't hit this button unwillingly: <input type="reset" value="Reset all form entries"><br> It cancels all data entries that you have typed in so far!</p>
 
 
 
