@@ -10,7 +10,7 @@
 // DB credentials
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "tarun1391";
 $dbname = "clusterform";
 
 // Create connection
@@ -482,7 +482,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         echo "Execute failed: (" . $stmt->errno . ")" . $stmt->error;
     }
     $projnr = $stmt->insert_id ;
-    echo "new records created successfully and has an id .\n". $stmt->insert_id;
+    echo "new records created successfully and has an id .\n". $projnr ;
 
    //content writing onto text files
 
@@ -661,9 +661,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 //shell commands : control enters into the unique dir and executes the pdflatex command also renames the template.pdf to your_application_'$projnr'.pdf
     shell_exec('cd "' . $tempfolder . '"; pdflatex --interaction=nonstopmode template; mv template.pdf your_application_'.$projnr.'.pdf');
 
-header('location: confirm.php');
 
-exit;
 }
 
 
