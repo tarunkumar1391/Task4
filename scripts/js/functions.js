@@ -1,18 +1,7 @@
 /**
  * Created by tarun on 11/17/15.
  */
-function pstate(){
-   var x =  document.getElementById('prop_st');
-    var y = document.getElementById('prop_st_other');
 
-    if(x.value === "Other"){
-        y.style.display='';
-    }else{
-        y.style.display='none';
-    }
-
-
-}
 function pp(){
    if(document.getElementById('yescheck').checked){
        document.getElementById('pptuid').style.display = '';
@@ -62,4 +51,15 @@ function resarea(){
     }
 
 
+}
+function toCount(entrance,exit,text,characters) {
+    var entranceObj=document.getElementById(entrance);
+    var exitObj=document.getElementById(exit);
+    var length=characters - entranceObj.value.length;
+    if(length <= 0) {
+        length=0;
+        text='<span class="disable"> '+text+' <\/span>';
+        entranceObj.value=entranceObj.value.substr(0,characters);
+    }
+    exitObj.innerHTML = text.replace("{CHAR}",length);
 }

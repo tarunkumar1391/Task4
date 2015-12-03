@@ -44,7 +44,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-3">Federal state of the Proposing Institution:</label>
                 <div class="col-sm-3">
-                    <select class="form-control" name="prop_state"  id="prop_st" required onclick="pstate()">
+                    <select class="form-control" name="prop_state"  id="prop_st" required >
                         <option value="Hessen" default>Hessen</option><option value="Baden-Württemberg">Baden-Württemberg</option>
                         <option value="Bayern">Bayern</option> <option value="Berlin">Berlin</option>
                         <option value="Brandenburg">Brandenburg</option> <option value="Bremen">Bremen</option>
@@ -182,7 +182,7 @@
                 </div>
                 <label class="control-label col-sm-2">Postal Code:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control input-sm" name="pm_pcode" placeholder="Postal code" required>
+                    <input type="text" class="form-control input-sm" name="pm_pcode" placeholder="Postal code" required>
                 </div>
             </div>
             <div class="form-group row">
@@ -920,48 +920,49 @@
             <p>If the fields above are not sufficient, please send an email to hhlr@hrz.tu-darmstadt.de.</p>
             <h4>1.5 Project Partners</h4>
             <div class="span5"></div>
-            <p>If project partners from outside the proposing institute are involved, please list them here. Project partners will not be granted access to the Lichtenberg computer unless you specify them as "Researchers" (in section 1.3), too.</p>
+            <p>If project partners from outside the proposing institute are involved, please list them here. Project partners will not be granted access to the Lichtenberg computer unless you specify them as "Researchers" (in section 1.4), too.</p>
             <div class="form-group row">
                 <label class="control-label col-sm-3">Title:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_title" placeholder="">
+                    <input type="text" class="form-control input-sm" name="pp_title" placeholder="Title" required>
                 </div>
-                <label class="control-label col-sm-2">Name of Institute:</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_inst" placeholder="">
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-3">Name of Institute:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control input-sm" name="pp_inst" placeholder="Name of the Institute" required>
                 </div>
-
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-3">Last Name:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_lname" placeholder="">
+                    <input type="text" class="form-control input-sm" name="pp_lname" placeholder="Last Name" required>
                 </div>
                 <label class="control-label col-sm-2">First Name:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_fname" placeholder="">
+                    <input type="text" class="form-control input-sm" name="pp_fname" placeholder="First Name" required>
                 </div>
 
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-3">Street:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_street" placeholder="">
+                    <input type="text" class="form-control input-sm" name="pp_street" placeholder="Street" required>
                 </div>
                 <label class="control-label col-sm-2">Postal code:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control input-sm" name="pp_pcode" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pp_pcode" placeholder="Postal code" required>
                 </div>
 
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-3">City:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control input-sm" name="pp_city" placeholder="">
+                    <input type="text" class="form-control input-sm" name="pp_city" placeholder="City" required>
                 </div>
                 <label class="control-label col-sm-2">Email:</label>
                 <div class="col-sm-2">
-                    <input type="email" class="form-control input-sm" name="pp_email" placeholder="">
+                    <input type="email" class="form-control input-sm" name="pp_email" placeholder="Email" required>
                 </div>
 
 
@@ -969,11 +970,11 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Phone:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control input-sm" name="pp_phone" placeholder="">
+                    <input type="number" class="form-control input-sm" name="pp_phone" placeholder="Phone" required>
                 </div>
                 <label class="control-label col-sm-2">TU-ID exists?  </label>
                 <label class="radio-inline col-sm-2">
-                    <input type="radio" name="pp_tuid" id="yescheck"  value="yes" onclick="pp();" required>yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  id="nocheck" name="pp_tuid" onclick="pp();" value="no">No
+                    <input type="radio" name="pp_tuid" id="yescheck"  value="yes" onclick="pp();" required>yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  id="nocheck" name="pp_tuid" onclick="pp();" value="no" required>No
                 </label>
 
                 <!--<label class="control-label col-sm-1">TU-ID:  </label>-->
@@ -984,10 +985,10 @@
             <div class="form-group row">
                 <label class="control-label col-sm-3">Lichtenberg Account exists?  </label>
                 <label class="radio-inline ">
-                    <input type="radio" name="pp_lichtacc" value="yes">yes
+                    <input type="radio" name="pp_lichtacc" value="yes" required>yes
                 </label>
                 <label class="radio-inline ">
-                    <input type="radio" name="pp_lichtacc" value="no">No
+                    <input type="radio" name="pp_lichtacc" value="no" required>No
                 </label>
             </div>
 
@@ -1042,7 +1043,8 @@
                 It should consist 800 to 2500 words. Typically, this abstract will be published by HRZ on the project web pages (see also 5.)</p>
             <div class="form-group">
                 <div class="col-xs-12 ">
-                    <textarea name="abstract" class="form-control" rows="10" minlength="800" maxlength="2500" ></textarea>
+                    <textarea name="abstract" style="overflow-x: hidden;" onKeyUp="toCount('gBann','uBann','{CHAR} characters remaining',2500);" type="text" id="gBann"  class="form-control" rows="10" minlength="800" maxlength="2500" ></textarea>
+                    <span id="uBann" >2500 characters remaining</span>
                 </div>
             </div>
             <h3>3. Technical Description</h3>
@@ -1055,13 +1057,13 @@
             <p>For this project the following project class is planned.</p>
             <div class="form-group">
                 <label class="radio-inline control-label col-sm-3">
-                    <input type="radio" name="proj_class" value="small"> SMALL (17,000 core-hours/<strong>month</strong>)
+                    <input type="radio" name="proj_class" value="SMALL"> SMALL (17,000 core-hours/<strong>month</strong>)
                 </label>
                 <label class="radio-inline control-label col-sm-4  ">
-                    <input type="radio" name="proj_class" value="middle"> MIDDLE (17,000-560,000 core-hours/<strong>month</strong>)
+                    <input type="radio" name="proj_class" value="MIDDLE"> MIDDLE (17,000-560,000 core-hours/<strong>month</strong>)
                 </label>
                 <label class="radio-inline control-label col-sm-4">
-                    <input type="radio" name="proj_class" value="large"> LARGE (560,000-2,040,000 core-hours/<strong>month</strong>)
+                    <input type="radio" name="proj_class" value="LARGE"> LARGE (560,000-2,040,000 core-hours/<strong>month</strong>)
                 </label>
             </div>
             <h4>3.2 Detailed resource requirements of the project</h4>
@@ -1151,19 +1153,19 @@
                         <tbody >
                         <tr>
                             <td ><label class="control-label">Max. number of cores:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_maxcores" placeholder="cores"> </td>
+                            <td ><input type="text" class="form-control input-sm" name="req_maxcores" placeholder="Cores" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">Run time (wall-clock time):</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_cputime" placeholder="Core hours"> </td>
+                            <td ><input type="text" class="form-control input-sm" name="req_cputime" placeholder="Core-hours" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">main memory/per core:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_mmpc" placeholder="GByte"> </td>
+                            <td ><input type="text" class="form-control input-sm" name="req_mmpc" placeholder="GByte" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">disk space:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_dpsace" placeholder="GByte"> </td>
+                            <td ><input type="text" class="form-control input-sm" name="req_dpsace" placeholder="GByte" required> </td>
                         </tr>
 
                         </tbody>
@@ -1207,7 +1209,7 @@
             <label class="control-label">Tools</label>
             <div class="form-group row">
                 <div class="checkbox">
-                    <label class="control-label col-sm-3"><input type="checkbox" name="tools[]" value="Performance Monitor(histx,pfmon,etc.)"> Performance Monitor(histx,pfmon,etc.)</label>
+                    <label class="control-label col-sm-3"><input type="checkbox" name="tools[]" value="Performance Monitor(histx, pfmon, etc.)"> Performance Monitor(histx,pfmon,etc.)</label>
                     <label class="control-label col-sm-2"><input type="checkbox" name="tools[]" value="Vampir"> Vampir(Intel Tracing Tools)</label>
                     <label class="control-label col-sm-1"><input type="checkbox" name="tools[]" value="TotalView"> TotalView</label>
                     <label class="control-label col-sm-1"><input type="checkbox" name="tools[]" value="Vtune"> Vtune</label>
@@ -1233,7 +1235,7 @@
             <div class="span5"></div>
             <p>The steering committee grants SMALL project accounts with restricted resources before  MIDDLE and LARGE projects are finally reviewed. Those test accounts are granted for any project proposal that comes with a sufficiently explanatory abstract and/or detailed description.</p>
             <p>However, the risk of useless work in case the project is rejected remains with the project proposer.</p>
-            <p>The duration of a testproject is at most one year.</p>
+            <p>The duration of a test project is at most one year.</p>
             <h4>3.6 Special Requirements</h4>
             <div class="span5"></div>
             <p>In case you have special requirements for your project (time-critical execution of the project, software, licenses etc.), you may list them here:</p>
@@ -1257,54 +1259,17 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td ><input type="checkbox" name="agree1"></td>
+                            <td ><input type="checkbox" name="agree1" required></td>
                             <td >will report on the progress of the project and publish the results in adequate form, see regulations and hints on status reports (In case of substantiated interest, the proposer may be released from this obligation),</td>
 
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="agree2"></td></td>
+                            <td><input type="checkbox" name="agree2" required></td></td>
                             <td>Confirms that, publications arising from this project, the computing time grant from Lichtenberg cluster will be acknowledged and that references to these publications
                                 will be sent to HRZ.</td>
                         </tr>
                         </tbody>
                     </table>
-
-                </div>
-            </div>
-            <!--<p> In particular</p>-->
-            <div class="form-group">
-                <div class="table-responsive">
-                    <!--<table class="table custom">-->
-                        <!--<thead>-->
-                        <!--<tr>-->
-                            <!--<th></th>-->
-                            <!--<th></th>-->
-
-                        <!--</tr>-->
-                        <!--</thead>-->
-                        <!--<tbody>-->
-                        <!--<tr>-->
-                            <!--<td ><input type="checkbox" name="agree3"></td>-->
-                            <!--<td >I affirm that the results achieved within the project are not comprised in the Annex I of the Regulation (EC) No 428/2009 (EC Dual Use Regulation) or in Part I of the Export Control List.</td>-->
-
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td ><input type="checkbox" name="agree4"></td>-->
-                            <!--<td >I affirm that the results are not related to any activities described in article 4 paragraph 1 of the Regulation (EC) No 428/2009.</td>-->
-
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td ><input type="checkbox" name="agree5"></td>-->
-                            <!--<td >In case a project researcher is citizen of a country with armament embargo, I affirm that the results are not associated with any military use, as described in article 4 paragraph 2 of the Regulation (EC) No 428/2009.)</td>-->
-
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td ><input type="checkbox" name="agree6"></td>-->
-                            <!--<td >I affirm that the results do not violate any of the embargo regulations.</td>-->
-                        <!--</tr>-->
-
-                        <!--</tbody>-->
-                    <!--</table>-->
 
                 </div>
             </div>
@@ -1314,13 +1279,11 @@
                         <thead>
                         <tr>
                             <th></th>
-
-
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td ><input type="checkbox" name="agreefinal"></td>
+                            <td ><input type="checkbox" name="agreefinal" required></td>
                             <td >I have verified that the results which will be achieved by the project are not liable to any EC Dual Use Regulation.</td>
 
                         </tr>
@@ -1350,10 +1313,5 @@
     </div>
 
 </div> <!--End of Main Container-->
-
-
-
-
-
 </body>
 </html>

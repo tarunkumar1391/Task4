@@ -1,1 +1,0 @@
-\CheckBox[name=agree3,charsize=12pt]{}

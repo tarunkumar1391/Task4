@@ -1,1 +1,0 @@
-OpenMP,SHMEM,Hybrid(MPI + OpenMP)
