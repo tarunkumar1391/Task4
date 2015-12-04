@@ -31,6 +31,10 @@
 \title{Projektbewirtschaftung \\ Lichtenberg-Rechner}
 \subtitle{Project Proposal, Computing time on the Lichtenberg Hochleistungsrechner}
 \maketitle
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{Project ID: \input{projnr.txt}}
 %\chapter{Mein erstes Kapitel}
 \section{Administrative Details}
 \begin{Form}
@@ -201,10 +205,14 @@ Please check the following conditions affirming that any person entered in 1.1, 
 
 \end{Form}
 \vspace{6cm}
-Your Project Nr. is: \framebox[4cm][s]{\input{projnr.txt}} \saferead{timestamp.txt}\\
+Project ID: \framebox[4cm][s]{\input{projnr.txt}} \saferead{timestamp.txt}\\
 \vspace{2cm}
  \hrule width 0.5\textwidth \\
  \vspace{5pt}
-Signature \& Date
+Signature \& Date, Principal Investigator
+\vspace{2cm}
+\hrule width 0.5\textwidth \\
+\vspace{5pt}
+Signature \& Date, Main Researcher
 
 \end{document}

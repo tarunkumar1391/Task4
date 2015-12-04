@@ -63,3 +63,11 @@ function toCount(entrance,exit,text,characters) {
     }
     exitObj.innerHTML = text.replace("{CHAR}",length);
 }
+function cputimecompute(){
+    var cptime = document.getElementById('cpu_time').value;
+    var month = document.getElementById('months').value;
+    var output = document.getElementById('info');
+    var res = Math.floor(cptime/month);
+    if(!isNaN(res))
+    output.innerHTML = "The total cpu time for the proposed period is rounded upto: " + res;
+}

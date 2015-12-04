@@ -1030,7 +1030,7 @@
                 </div>
                 <label class="control-label col-sm-3">Number of months (max. 12 months per proposal period):</label>
                 <div class="col-sm-2">
-                    <select class="form-control" name="proj_hours" required>
+                    <select class="form-control" name="proj_hours"  onkeyup="cputimecompute();" id="months"required>
                         <option>--Please Select--</option>
                         <option>12</option><option>11</option><option>10</option><option>09</option><option>08</option>
                         <option>07</option><option>06</option><option>05</option><option>04</option><option>03</option>
@@ -1051,7 +1051,7 @@
             <div class="span5"></div>
             <p>Please have a look at the <a href="http://www.hhlr.tu-darmstadt.de/hhlr/betrieb/hardware_hlr/index.de.jsp" title="hlrb-hardware">hardware overview</a> of the HRZ first, and verify that you really need a machine of this size for your project.
                 This CPU time requirement for MIDDLE and LARGE project class must be justified in a detailed project description.</p>
-            <p><em>In the following, always count the number of individual processors (cores) that your program will need.</em></p>
+            <p><em>In the following, always count the number of individual cores that your program will need(estimated).</em></p>
             <h4>3.1 Project class</h4>
             <div class="span5"></div>
             <p>For this project the following project class is planned.</p>
@@ -1084,7 +1084,8 @@
                         <tbody>
                         <tr>
                             <td ><label class="control-label ">CPU Time for proposed period:</label></td>
-                            <td ><input type="number" class="form-control input-sm" name="cpu_time" placeholder="core-hours" required></td>
+                            <td ><input type="number" class="form-control input-sm" name="cpu_time" id="cpu_time" onkeyup="cputimecompute();" placeholder="core-hours" required>
+                                <span class="text-muted"><p id="info"></p></span></td>
                             <td ><p>(This is the total compute time for your project, e.g.:<br> wall clock time for parallel application*number of cores*number of runs + testing + etc.)</p></td>
 
                         </tr>
@@ -1153,19 +1154,19 @@
                         <tbody >
                         <tr>
                             <td ><label class="control-label">Max. number of cores:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_maxcores" placeholder="Cores" required> </td>
+                            <td ><input type="number" class="form-control input-sm" name="req_maxcores" placeholder="Cores" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">Run time (wall-clock time):</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_cputime" placeholder="Core-hours" required> </td>
+                            <td ><input type="number" class="form-control input-sm" name="req_cputime" placeholder="Core-hours" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">main memory/per core:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_mmpc" placeholder="GByte" required> </td>
+                            <td ><input type="number" class="form-control input-sm" name="req_mmpc" placeholder="GByte" required> </td>
                         </tr>
                         <tr>
                             <td ><label class="control-label">disk space:</label></td>
-                            <td ><input type="text" class="form-control input-sm" name="req_dpsace" placeholder="GByte" required> </td>
+                            <td ><input type="number" class="form-control input-sm" name="req_dpsace" placeholder="GByte" required> </td>
                         </tr>
 
                         </tbody>
@@ -1314,4 +1315,10 @@
 
 </div> <!--End of Main Container-->
 </body>
+<script>
+    pp();pm();res1();res2();
+    cputimecompute();
+
+    resarea();
+</script>
 </html>
